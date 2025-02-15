@@ -1,53 +1,46 @@
-🚀 Credit Card Customer Churn Prediction Using Deep Learning
-📌 Overview
-This project focuses on predicting customer churn in the banking sector using deep learning. We preprocess the dataset, perform feature engineering, and apply a Neural Network model to classify whether a customer will churn or not.
+# 🎯 Credit Card Customer Churn Prediction  
 
-📂 Dataset
-The dataset used in this project is from Kaggle:
-🔗 Credit Card Customer Churn Prediction
+## 📌 Project Overview  
+This project aims to predict **customer churn** for a credit card company using a **deep learning model**. By analyzing customer details and behavioral patterns, we can identify factors contributing to churn and take proactive measures to retain customers.  
 
-It contains details such as:
+The dataset used for this analysis is the **Credit Card Customer Churn Prediction Dataset** from Kaggle. The project involves:  
+✔️ **Data Preprocessing** – Cleaning and transforming data for modeling  
+✔️ **Exploratory Data Analysis (EDA)** – Understanding patterns and relationships  
+✔️ **Deep Learning Model** – Built using **TensorFlow & Keras**  
 
-Customer demographics
-Account balance
-Credit score
-Transaction history
-Churn status
-🛠️ Technologies Used
-Python 🐍
-Pandas & NumPy – Data processing & manipulation
-Scikit-learn – Data preprocessing & splitting
-TensorFlow & Keras – Deep learning model
-Matplotlib – Visualization
-📊 Data Preprocessing
-✔ Handling missing values & duplicates
-✔ One-hot encoding categorical features
-✔ Feature scaling using StandardScaler
-✔ Splitting data into training & testing sets
+---
 
-🤖 Model Architecture
-A fully connected Neural Network with:
+## 📂 Dataset Information  
+📌 **Source**: [Kaggle - Credit Card Customer Churn Prediction](https://www.kaggle.com/)  
+📌 **Target Variable**: `Exited` (1 = Churned, 0 = Retained)  
 
-Input layer – 11 neurons (features)
-Hidden layers – 2 layers (each with 11 neurons & ReLU activation)
-Output layer – 1 neuron (Sigmoid activation for binary classification)
-Model Compilation:
-Loss Function: Binary Crossentropy
-Optimizer: Adam
-Metric: Accuracy
-🚦 Training the Model
-The model is trained for 100 epochs, using 20% validation split to track performance.
+### 🔍 Features:  
+- **Customer Demographics** – Gender, Geography, Age, etc.  
+- **Account Information** – Balance, Credit Score, Tenure, etc.  
+- **Other Factors** – Behavioral & financial indicators affecting churn  
 
-📉 Loss & Accuracy Graphs:
+---
 
-Training vs Validation Loss
-Training vs Validation Accuracy
-📌 Results
-✅ Model evaluation using Accuracy Score
-✅ Predictions using the trained model
+## 🚀 Technologies Used  
+- 🟢 **Python** – Data Processing & Model Training  
+- 🟢 **Pandas, NumPy** – Data Handling & Manipulation  
+- 🟢 **Scikit-Learn** – Preprocessing & Evaluation Metrics  
+- 🟢 **Matplotlib, Seaborn** – Data Visualization  
+- 🟢 **TensorFlow & Keras** – Deep Learning Model  
 
-📈 Visualization
-Plots for:
-📊 Loss vs Validation Loss
-📊 Accuracy vs Validation Accuracy
+---
 
+## 📊 Project Workflow  
+1. **Load & Explore Data**  
+2. **Preprocess Data** – Handle missing values, encoding, scaling  
+3. **Perform EDA** – Visualizing distributions, correlations, and trends  
+4. **Build Deep Learning Model** – Using **TensorFlow & Keras**  
+5. **Evaluate Performance** – Accuracy, Precision, Recall, F1-score  
+6. **Optimize & Fine-Tune Model**  
+
+---
+
+## 📜 How to Run the Project  
+### 🔹 Install dependencies  
+```bash
+pip install pandas numpy scikit-learn matplotlib seaborn tensorflow keras
